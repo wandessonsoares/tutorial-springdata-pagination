@@ -21,36 +21,3 @@ public class TutorialSpringDataPaginationApplication {
   }
 
 }
-
-record Post(Long id, String content, String author) {
-
-}
-
-interface PostRepository extends PagingAndSortingRepository<Post, Long> {
-
-}
-
-@Service
-class PostService {
-  PostRepository postRepository;
-
-  public PostService(PostRepository postRepository) {
-    this.postRepository = postRepository;
-  }
-
-  public Page<Post> listPosts(Pageable pageable) {
-    return postRepository.findAll(pageable);
-  }
-}
-
-@RestController
-@RequestMapping("/posts")
-class PostController {
-  @Autowired
-  PostService postService;
-
-  @GetMapping
-  public List<Post> listPosts(Pageable pageable) {
-    return postService.listPosts(pageable).getContent();
-  }
-}

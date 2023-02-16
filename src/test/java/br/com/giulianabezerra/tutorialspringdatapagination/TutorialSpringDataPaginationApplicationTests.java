@@ -2,6 +2,8 @@ package br.com.giulianabezerra.tutorialspringdatapagination;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import br.com.giulianabezerra.tutorialspringdatapagination.model.Post;
+import br.com.giulianabezerra.tutorialspringdatapagination.service.PostService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
