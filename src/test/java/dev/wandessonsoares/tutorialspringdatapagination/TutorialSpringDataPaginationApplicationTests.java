@@ -1,9 +1,9 @@
-package br.com.giulianabezerra.tutorialspringdatapagination;
+package dev.wandessonsoares.tutorialspringdatapagination;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import br.com.giulianabezerra.tutorialspringdatapagination.model.Post;
-import br.com.giulianabezerra.tutorialspringdatapagination.service.PostService;
+import dev.wandessonsoares.tutorialspringdatapagination.model.Post;
+import dev.wandessonsoares.tutorialspringdatapagination.service.PostService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

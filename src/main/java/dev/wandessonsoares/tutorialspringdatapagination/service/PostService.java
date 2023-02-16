@@ -1,7 +1,7 @@
-package br.com.giulianabezerra.tutorialspringdatapagination.service;
+package dev.wandessonsoares.tutorialspringdatapagination.service;
 
-import br.com.giulianabezerra.tutorialspringdatapagination.model.Post;
-import br.com.giulianabezerra.tutorialspringdatapagination.repository.PostRepository;
+import dev.wandessonsoares.tutorialspringdatapagination.model.Post;
+import dev.wandessonsoares.tutorialspringdatapagination.repository.PostRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
